@@ -1,0 +1,36 @@
+{
+    "name": "prositedeveloper/laravel-weather",
+    "description": "Get weather from any location",
+    "version": "1.0.0",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Prositedeveloper\\LaravelWeather\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Prositedeveloper\\LaravelWeather\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "prositedeveloper",
+            "email": "aga.davdav@yandex.ru"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Prositedeveloper\\LaravelWeather\\Providers\\WeatherServiceProvider"
+            ]
+        }
+    }
+}
